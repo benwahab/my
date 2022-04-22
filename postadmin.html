@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>posts</title>
+</head>
+<body>
+  <nav>
+    <div class="navbar-fixed">
+        <nav class="blue">
+                <div class="container">
+                  <div class="nav-wrapper">
+                    <a href="http://127.0.0.1:5500/myadmin/index.html" class="brand-logo">MyAdmin</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li class="active"><a href="http://127.0.0.1:5500/myadmin/index.html">Dashboard</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/postadmin.html">Post</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/categoadmin.html">Categories</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/comadmin.html">Comments</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/useradmin.html">Users</a></li>
+                      <li><a id="latteral" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>       
+        <li>
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                  <div class="user-view">
+                    <div class="background">
+                      <img src="pexels-photo-4712727.jpeg">
+                    </div>
+                    <a href="#!user"><img class="circle" src="pexels-photo-4712727.jpeg"></a>
+                    <a href="#!name"><span class="white-text name">Ben Wahab</span></a>
+                    <a href="#!email"><span class="white-text email">benwahab111@gmail.col</span></a>
+                  </div>
+                </li>
+                <li class="active"><a href="http://127.0.0.1:5500/myadmin/index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/postadmin.html">Post</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/categoadmin.html">Categories</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/comadmin.html">Comments</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/useradmin.html">Users</a></li>
+                <li><div class="divider"></div></li>
+            </ul>
+        </li>
+        
+
+     <a href="index.html" class="brand-logo">MyAdmin</a>
+     <a href="http://127.0.0.1:5500/myadmin/index.html" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div class="col s12  ">
+              <table class="striped white ">
+                  <thead class="">
+                      
+                    <tr>
+                      <h5 class="">Posts</h5>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Data Created</th>
+                    </tr>
+                  </thead>
+          
+                  <tbody>
+                    <tr>
+                        <td> Post One</td>
+                        <td>Web Developement</td>
+                        <td>oct, 1 2019</td>
+                        <td class="btn blue">Details</td>
+                    </tr>
+                    <tr>
+                      <td>Post Two</td>
+                      <td>Graphic Design</td>
+                      <td>oct, 1 2019</td>
+                      <td class="btn blue">Details</td>
+                    </tr>
+                    <tr>
+                      <td>Post Three</td>
+                      <td>Web Developement</td>
+                      <td>oct, 1 2019</td>
+                      <td class="btn blue">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Post Four</td>
+                        <td>Tech Gadgets</td>
+                        <td>oct, 1 2019</td>
+                        <td class="btn blue">Details</td>
+                      </tr>
+                      <tr>
+                        <td>Post Five</td>
+                        <td>Graphic Design</td>
+                        <td>oct, 1 2019</td>
+                        <td class="btn blue">Details</td>
+                      </tr>
+                    <tr>
+                      <td>Post Six</td>
+                      <td>Web Developement</td>
+                      <td>oct, 1 2019</td>
+                      <td class="btn blue">Details</td>
+                    </tr>
+                    
+                  </tbody>
+                  
+                </table>
+                <ul class="pagination ">
+                  <li class="disabled "><a href="#!"><i class="material-icons blue-text">chevron_left</i></a></li>
+                  <li class="active blue"><a href="#!" class="white-text">1</a></li>
+                  <li class="waves-effect"><a href="#!" class="blue-text">2</a></li>
+                  <li class="waves-effect"><a href="#!" class="blue-text">3</a></li>
+                  <li class="waves-effect"><a href="#!" class="blue-text">4</a></li>
+                  <li class="waves-effect"><a href="#!" class="blue-text">5</a></li>
+                  <li class="waves-effect"><a href="#!" class="blue-text"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+                      
+            </div>
+        </div>
+    </div>
+      
+      <div class="container-fluid">
+        <div class="row blue center">
+            
+            <div class="col s12 m10">
+                <p class="white-text">MyAdmin CodeLoccol Copyright @ 2019</p><div class="fixed-action-btn">
+                  <a class="btn-floating btn-large red">
+                    <i class="large material-icons">mode_edit</i>
+                  </a>
+                  <ul>
+                    <li>
+                      <div id="modal1" class="modal">
+                          
+                          <div class="modal-content">
+                              <h6 class="">Add Post</h6>
+                             <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label> 
+                             </div>
+                             <div class="input-field col s12">
+                              <select>
+                                <option value="" disabled selected>Select option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                              <label>Categories</label>
+                            </div>  
+                          </div>
+                          <div class="modal-footer">
+                              <a class="waves-effect waves-light btn blue" href="#">Submit</a>
+                          </div>
+                        </div>
+                      <a class="btn-floating red waves-effect waves-light btn modal-trigger" href="#modal1">
+                        <i class="material-icons">create</i></a>
+                      </li>
+                        <li>
+                          <div id="modal2" class="modal">
+                              
+                              <div class="modal-content">
+                                  <h6>Add Category</h6>
+                                 <div class="input-field col s12">
+                                  <input id="password" type="password" class="validate">
+                                  <label for="password">Titre</label> 
+                                 </div>
+
+                              </div>
+                              <div class="modal-footer">
+                                  <a class="waves-effect waves-light btn blue" href="#">Submit</a>
+                              </div>
+                            </div>
+                          <a class="btn-floating green waves-effect waves-light btn modal-trigger" href="#modal2">
+                            <i class="material-icons">folder</i></a>
+                          </li>
+                            <li>
+                              <div id="modal3" class="modal">
+                                  
+                                  <div class="modal-content">
+                                      <h6 class="">Add User</h6>
+                                     <div class="input-field col s12">
+                                      <input placeholder="Name" type="text" class="validate">
+                                     </div>
+                                     <div class="input-field col s12">
+                                      <input placeholder="Email" type="email" class="validate">
+                                     </div>
+                                     <div class="input-field col s12">
+                                      <input placeholder="Password" type="password" class="validate">
+                                     </div>
+                                     <div class="input-field col s12">
+                                      <input placeholder="Confirm Password" type="password" class="validate">
+                                     </div>
+
+                                     
+                                  </div>
+                                  <div class="modal-footer">
+                                      <a class="waves-effect waves-light btn blue" href="#">Submit</a>
+                                  </div>
+                                </div>
+                              <a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal3">
+                                <i class="material-icons">people</i></a>
+                              </li>
+                    
+                    
+                  </ul>
+                </div>
+            </div>
+            <div class="col s12 m2">
+              
+             
+            </div>
+
+        </div>
+    </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+<script>
+   $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+</html>

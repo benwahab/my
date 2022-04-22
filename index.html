@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>admin</title>
+</head>
+<body>
+  <nav>
+    <div class="navbar-fixed">
+        <nav class="blue">
+                <div class="container">
+                  <div class="nav-wrapper">
+                    <a href="http://127.0.0.1:5500/myadmin/index.html" class="brand-logo">MyAdmin</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                      <li class="active"><a href="http://127.0.0.1:5500/myadmin/index.html">Dashboard</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/postadmin.html">Post</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/categoadmin.html">Categories</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/comadmin.html">Comments</a></li>
+                      <li><a href="http://127.0.0.1:5500/myadmin/useradmin.html">Users</a></li>
+                      <li><a id="latteral" href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>       
+        <li>
+            <ul class="sidenav" id="mobile-demo">
+                <li>
+                  <div class="user-view">
+                    <div class="background">
+                      <img src="pexels-photo-4712727.jpeg">
+                    </div>
+                    <a href="#!user"><img class="circle" src="pexels-photo-4712727.jpeg"></a>
+                    <a href="#!name"><span class="white-text name">Ben Wahab</span></a>
+                    <a href="#!email"><span class="white-text email">benwahab111@gmail.col</span></a>
+                  </div>
+                </li>
+                <li class="active"><a href="http://127.0.0.1:5500/myadmin/index.html"><i class="material-icons left">dashboard</i>Dashboard</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/postadmin.html">Post</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/categoadmin.html">Categories</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/comadmin.html">Comments</a></li>
+                <li><a href="http://127.0.0.1:5500/myadmin/useradmin.html">Users</a></li>
+                <li><div class="divider"></div></li>
+            </ul>
+        </li>
+        
+
+     <a href="index.html" class="brand-logo">MyAdmin</a>
+     <a href="http://127.0.0.1:5500/myadmin/index.html" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col s12 m3">
+              <div class="card blue center">
+                <div class="card-content white-text">
+                    <span class="material-icons">
+                        mood
+                        </span>
+                        
+                  <span class="card-title center">Monthfly Visitors</span>
+                  <p>35900
+                  </p>
+                  <div class="progress grey lighten-1">
+                    <div class="determinate white" style="width: 45%"></div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card center ">
+                  <div class="card-content dark-text">
+                    <span class="material-icons">
+                        mode
+                        </span>
+                        
+                    <span class="card-title center">Blog Posts</span>
+                    <p>207
+                    </p>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate blue" style="width: 35%"></div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col s12 m3">
+                <div class="card blue center">
+                  <div class="card-content white-text">
+                    <span class="material-icons">
+                        mode_comment
+                        </span>
+                        
+                    <span class="card-title center">Comments</span>
+                    <p>2300
+                    </p>
+                    <div class="progress  grey lighten-1">
+                        <div class="determinate white" style="width: 45%"></div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="col s12 m3">
+                <div class="card center">
+                  <div class="card-content dark-text">
+                    <span class="material-icons">
+                        group
+                        </span>
+                        
+                    <span class="card-title center">Users</span>
+                    <p>410
+                    </p>
+                    <div class="progress grey lighten-1">
+                        <div class="determinate blue" style="width: 25%"></div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-">
+          <div class="row light-blue lighten-3">
+                <div class="col s12 m7">
+                  <div class="card center blue-text">
+                      <h4> Visitors</h4>
+                      <div class="card">
+                               <div id="chartContainer" style="height: 300px; width: 100%;">
+                                <div class="canvasjs-chart-container" style="position: relative; text-align: left; cursor: auto; direction: ltr;">
+                                  <canvas class="canvasjs-chart-canvas" width="652" height="600" style="width: 326px; height: 300px; position: absolute; user-select: none;"></canvas>
+                                  <canvas class="canvasjs-chart-canvas" width="652" height="600" style="width: 326px; height: 300px; position: absolute; -webkit-tap-highlight-color: transparent; user-select: none; cursor: default;"></canvas>
+                                  <div class="canvasjs-chart-toolbar" style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                                  <div class="canvasjs-chart-tooltip" style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                                    <div style="width: auto; height: auto; min-width: 50px; line-height: normal; margin: 0px; padding: 5px; font-family: Calibri, Arial, Georgia, serif; font-weight: normal; font-style: italic; font-size: 14px; color: rgb(0, 0, 0); text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px; text-align: left; border: 2px solid gray; background: rgba(255, 255, 255, 0.9); text-indent: 0px; white-space: nowrap; border-radius: 5px; user-select: none;">Sample Tooltip</div>
+                                  </div>
+                                  <a class="canvasjs-chart-credit" title="JavaScript Charts" tabindex="-1" target="_blank" href="https://canvasjs.com/" style="outline: none; margin: 0px; position: absolute; right: 2px; top: 286px; color: dimgrey; text-decoration: none; font-size: 11px; font-family: Calibri, quot; Lucida-Grandequot   Unicodequot Arial-sans-serif;">CanvasJS.com</a>
+                                </div>
+                              </div>
+                      </div>
+                  </div>
+  
+             </div>
+                
+
+             
+              <div class="col s12 m5">
+                <ul class="collection with-header">
+                    <li class="collection-header"><h5>Latest Comments </h5></li>
+                    <li class="collection-item avatar">
+                        <img src="pexels-photo-4969621.jpeg" alt="" class="circle">
+                        <span class="title">Rachida Zakou</span>
+                        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            <span class="green-text">Approve</span>/ <span class="red-text">Deny</span>  
+                        </p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="pexels-photo-4969621.jpeg" alt="" class="circle">
+                        <span class="title">Mamane Sani</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                            <span class="green-text">Approve</span>/ <span class="red-text">Deny</span>
+                        </p>
+                      </li>
+                      <li class="collection-item avatar">
+                        <img src="pexels-photo-4969621.jpeg" alt="" class="circle">
+                        <span class="title">Yasmine Abani</span>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>
+                            <span class="green-text">Approve</span>/ <span class="red-text">Deny</span>
+                        </p>
+                      </li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="container- grey lighten-3">
+          <div class="row">
+              <div class="col s12 m7 ">
+                <table class="striped white ">
+                    <thead class="">
+                        
+                      <tr>
+                        <h5 class="">Recent posts</h5>
+                          <th>Title</th>
+                          <th>Categories</th>
+                          <th class=""></th>
+                      </tr>
+                    </thead>
+            
+                    <tbody>
+                      <tr>
+                        <td>post one</td>
+                        <td>Web Developement</td>
+                        <td class="btn blue">Details</td>
+                      </tr>
+                      <tr>
+                        <td>Post Two</td>
+                        <td>Graphic Design</td>
+                        <td class="btn blue">Details</td>
+                      </tr>
+                      <tr>
+                        <td>Post Three</td>
+                        <td>Web Developement</td>
+                        <td class="btn blue">Details</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                        
+              </div>
+              <div class="col s12 m5">
+                  <div class="form white">
+                      <h5>Quick Todos</h5>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <input id="password" type="password" class="validate">
+                          <label for="password">Add Todo...</label>
+                          <ul class="collection">
+                            <li class="collection-item">Todo One <i class="fa-solid fa-xmark green-text" style="margin-left: 80%;"></i></li>
+                               
+                            <li class="collection-item">Todo Two <i class="fa-solid fa-xmark green-text" style="margin-left: 80%;"></i></li>
+                          </ul>
+                        </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="row blue center">
+              <div class="col s12">
+                  <p class="white-text">MyAdmin CodeLoccol Copyright @ 2019</p><div class="fixed-action-btn">
+                    <a class="btn-floating btn-large red">
+                      <i class="large material-icons">mode_edit</i>
+                    </a>
+                    <ul>
+                        <li>
+                          <div id="modal1" class="modal container" tabindex="0">
+                            <div class="modal-content black-text">
+                                <h4 class="blue-text">Add Post</h4>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <input id="password" type="text" class="validate">
+                                    <label for="password">Titre</label>
+                                  </div>
+                                </div>
+                                        
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="input-field col s12">
+                                          <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                          </select>
+                                          <label>Category</label>
+                                        </div>
+                                    </form>               
+                                </div>
+                                <div class="form-floating">
+                                  <p class="text">Body</p>
+                                  <textarea name="editor2"></textarea>
+                                      <script>
+                  
+                                            CKEDITOR.replace( 'editor2' );
+                  
+                                      </script>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="modal-close btn waves-effect waves-green blue lighten-2 white-text">SUBMIT</a>
+                            </div>
+                        </div>
+                       
+                        </li>
+                        <a class="btn-floating red waves-effect waves-light btn modal-trigger" href="#modal1">
+                          <i class="material-icons">create</i></a>
+                          <li>
+                            <div id="modal2" class="modal container" tabindex="0">
+                              <div class="modal-content black-text">
+                                  <h4 class="blue-text">Add Category</h4>
+                                      <form class="col s12">
+                                          <div class="row">
+                                              <div class="input-field col s12">
+                                                  <input type="text" id="textarea1">
+                                                  <label for="textarea1">Title</label>
+                                              </div>
+                                              <a href="#!" class="modal-close btn waves-effect waves-green blue lighten-2 white-text right">SUBMIT</a>
+                                          </div>   
+                                      </form>
+                              </div>
+                          </div>
+                          <a class="btn-floating green waves-effect waves-light btn modal-trigger" href="#modal2">
+                              <i class="material-icons">folder</i></a>
+                            </li>
+                              <li>
+                                <div id="modal3" class="modal container" tabindex="0">
+                                  <div class="modal-content black-text">
+                                      <h4 class="blue-text">Add User</h4>
+                                          <form class="col s12">
+                                              <div class="row">
+                                                  <div class="input-field col s12">
+                                                      <input type="text" id="name1">
+                                                      <label for="name1">Name</label>
+                                                  </div>
+                                                  <div class="input-field col s12">
+                                                      <input type="email" id="email1">
+                                                      <label for="email1">Email</label>
+                                                  </div>
+                                                  <div class="input-field col s12">
+                                                      <input type="password" id="password1">
+                                                      <label for="password1">Password</label>
+                                                  </div>
+                                                  <div class="input-field col s12">
+                                                      <input type="password" id="pass2">
+                                                      <label for="pass2">Confirm Password</label>
+                                                  </div>
+                                                  <a href="#!" class="modal-close btn waves-effect waves-green blue lighten-2 white-text right">SUBMIT</a>
+                                              </div>
+                                          </form>
+                                  </div>
+                              </div>
+                                <a class="btn-floating blue waves-effect waves-light btn modal-trigger" href="#modal3">
+                                  <i class="material-icons">people</i></a>
+                                </li>
+                      
+                      
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/Chart.Financial.js?100"></script>
+    
+</body>
+<script>
+ tinymce.init({ selector: 'textarea' });
+</script>
+<script>
+
+  $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  })
+
+  
+     
+        
+</script>
+<script>
+  window.onload = function () {
+  
+  var chart = new CanvasJS.Chart("chartContainer", {
+      animationEnabled: true,
+      theme: "light2",
+      title:{
+          text: "Simple Line Chart"
+      },
+      data: [{        
+          type: "line",
+            indexLabelFontSize: 16,
+          dataPoints: [
+              { y: 450 },
+              { y: 414},
+              { y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+              { y: 460 },
+              { y: 450 },
+              { y: 500 },
+              { y: 480 },
+              { y: 480 },
+              { y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+              { y: 500 },
+              { y: 480 },
+              { y: 510 }
+          ]
+      }]
+  });
+  chart.render();
+  
+  }
+  </script>
+ 
+</html>
